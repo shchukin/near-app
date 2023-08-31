@@ -1,17 +1,37 @@
-import { useState } from 'react'
+import {useState} from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Button from "./components/button/button.jsx";
+import Deal from "./components/deal/deal.jsx";
+import {deals} from "./mocks/deals.js";
+
+console.log(deals);
 
 function App() {
-  const [count, setCount] = useState(0)
+    const [count, setCount] = useState(0)
 
-  return (
-    <>
+    return (
 
-        <div style={{ maxWidth: "390px", margin: "0 auto" }}>
+        <div style={{maxWidth: "390px", margin: "0 auto"}}>
 
+            <h1>Deal</h1>
+
+
+            {
+                deals.map((deal, index)=> {
+                    return(
+                        <Deal data={deal}/>
+                    )
+                })
+            }
+
+
+
+            <br/>
+            <br/>
+            <br/>
+            <br/>
             <h1>.button</h1>
             <h2>theme</h2>
             <p>
@@ -84,6 +104,7 @@ function App() {
                 Продолжить с Google
             </Button>
 
+
             <br/>
             <br/>
             <br/>
@@ -101,8 +122,7 @@ function App() {
 
 
         </div>
-    </>
-  )
+    )
 }
 
 export default App
