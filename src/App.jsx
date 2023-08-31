@@ -10,9 +10,13 @@ function App() {
   return (
     <>
 
-        <div style={{ maxWidth: "600px", margin: "0 auto" }}>
+        <div style={{ maxWidth: "390px", margin: "0 auto" }}>
 
             <h1>.button</h1>
+            <h2>theme</h2>
+            <p>
+                Обезательная пропса, посколько дефолтной кнопки не существует. Какой-то из следующих скинчиков обезательно нужно выбрать:
+            </p>
 
             <h3>white</h3>
 
@@ -48,6 +52,54 @@ function App() {
                 </Button>
 
             </div>
+
+
+            <br/>
+            <br/>
+            <h2>socialIcon</h2>
+            <p>
+                Опциональная иконка. Важно, что здесь расчёт только на иконки соц. сетей -- большие и всегда с краю.
+                В общем виде кнопок с иконками нет.
+            </p>
+
+            <h3>email</h3>
+
+            <Button theme="white" socialIcon="email">
+                Продолжить с Email
+            </Button>
+
+            <br/>
+            <br/>
+            <h3>instagram</h3>
+
+            <Button theme="white" socialIcon="instagram">
+                Продолжить с Instagram
+            </Button>
+
+            <br/>
+            <br/>
+            <h3>google</h3>
+
+            <Button theme="white" socialIcon="google">
+                Продолжить с Google
+            </Button>
+
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+
+
         </div>
     </>
   )
