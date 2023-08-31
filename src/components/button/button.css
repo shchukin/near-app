@@ -1,0 +1,95 @@
+.button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    vertical-align: top;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+}
+    .button__social-icon {
+        position: absolute;
+        left: 13px;
+        top: 50%;
+        margin-top: -15px;
+        fill: currentColor;
+    }
+
+
+.button--white {
+    background-color: #FFFFFF;
+    box-shadow: inset 0 0 0 1px #979797;
+    color: #000000;
+}
+
+.button--shadow-white {
+    background-color: #FFFFFF;
+    box-shadow: inset 0 0 0 1px #979797,
+                0 4px 4px rgba(0, 0, 0, 0.25);
+    color: #000000;
+}
+
+.button--border-white {
+    background-color: transparent;
+    box-shadow: 0 0 0 1px #FFFFFF;
+    color: #FFFFFF;
+}
+    .button--border-white .button__icon {
+        filter: invert(100%);
+    }
+
+
+
+.button--black {
+    background-color: #000000;
+    box-shadow: inset 0 0 0 1px #FFFFFF;
+    color: #FFFFFF;
+}
+
+.button--shadow-black {
+    background-color: #000000;
+    box-shadow: inset 0 0 0 1px #FFFFFF,
+                0 4px 4px rgba(255, 255, 255, 0.25);
+    color: #FFFFFF;
+}
+
+
+.button__icon {
+    vertical-align: top;
+    fill: currentColor;
+}
+
+.button__icon--left {
+    margin-right: 12px;
+}
+
+
+
+.button--smaller {
+    padding: 8px 14px;
+    font-size: 15px;
+}
+    .button--smaller .button__icon {
+
+    }
+
+    .button--smaller .button__icon--left {
+        margin-right: 6px;
+    }
+
+
+
+.button[disabled] {
+    opacity: 0.5;
+    pointer-events: none;
+}

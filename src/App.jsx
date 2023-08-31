@@ -9,16 +9,46 @@ function App() {
 
   return (
     <>
-      <h1>Near</h1>
 
-        <Button/>
+        <div style={{ maxWidth: "600px", margin: "0 auto" }}>
+
+            <h1>.button</h1>
+
+            <h3>white</h3>
+
+            <Button theme="white">
+                Найти любимое место
+            </Button>
+
+            <br/>
+            <br/>
+            <h3>shadow-white</h3>
 
 
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
+            <Button theme="shadow-white">
+                Найти любимое место
+            </Button>
+
+            <br/>
+            <br/>
+            <h3>black</h3>
+            <div style={{backgroundColor: "#000000", padding: "20px"}}>
+
+                <Button theme="black">
+                    Найти любимое место
+                </Button>
+
+            </div>
+            <br/>
+            <h3>shadow-black</h3>
+            <div style={{backgroundColor: "#000000", padding: "20px"}}>
+
+                <Button theme="shadow-black">
+                    Найти любимое место
+                </Button>
+
+            </div>
+        </div>
     </>
   )
 }
