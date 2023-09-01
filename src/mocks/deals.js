@@ -7,6 +7,7 @@ export const deals = [
     'venue': 'Cafe de Paris',
     'venueDescription': 'Высокая кухня от итальянского шеф-повара',
     'isFavorite': false,
+    'highlights': []
   },
   {
     'id': 2,
@@ -15,7 +16,13 @@ export const deals = [
     'isHot': true,
     'venue': 'Fabriq',
     'venueDescription': 'Гастрономический ресторан',
-    'isFavorite': false,
+    'isFavorite': true,
+    'highlights': [
+      {
+        'icon': 'symbols/thick-store.svg',
+        'text': 'до 23:00'
+      }
+    ]
   },
   {
     'id': 3,
@@ -24,7 +31,18 @@ export const deals = [
     'isHot': true,
     'venue': 'Ember',
     'venueDescription': 'Гавайская кухня',
-    'isFavorite': false,
+    'isFavorite': true,
+    'highlights': [
+      {
+        'icon': 'symbols/thick-music.svg',
+      },
+      {
+        'icon': 'symbols/thick-cocktail.svg',
+      },
+      {
+        'icon': 'symbols/thick-shisha.svg',
+      }
+    ]
   },
   {
     'id': 4,
@@ -32,6 +50,7 @@ export const deals = [
     'isHot': false,
     'venue': 'Кофевариум',
     'venueDescription': 'Кофейня',
-    'isFavorite': false,
+    'isFavorite': true,
+    'highlights': []
   },
 ];

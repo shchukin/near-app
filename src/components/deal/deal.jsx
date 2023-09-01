@@ -1,23 +1,27 @@
 import './../../components/deal/deal.css'
+import Dummy from "../dummy/dummy.jsx";
+import Bookmark from "../bookmark/bookmark.jsx";
+import Highlight from "../highlight/highlight.jsx";
 
 function Deal(props) {
-    return(
+
+    // TO DO: Запрограммировать добавление в избранное
+
+    return (
         <article className="deal">
             <div className="deal__stage">
                 <a className="deal__preview" href="venue.html">
-                    <img className="deal__photo" src={props.data.photo} width="1425" height="950" alt=""/>
-                    {/*или*/}
-                    {/*<div className="dummy">*/}
-                    {/*    <img className="dummy__icon" src="../symbols/dummy.svg" width="30" height="30" alt=""/>*/}
-                    {/*</div>*/}
+                    {
+                        props.data.photo
+                            ? <img className="deal__photo" src={props.data.photo} width="1425" height="950" alt=""/>
+                            : <Dummy/>
+                    }
                 </a>
                 <div className="deal__favorites">
-                    <button className="bookmark" type="button">
-                        <img className="bookmark__icon" src={`symbols/${props.data.isFavorite ? 'heart-fill' : 'heart'}.svg`} width="24" height="24" alt=""/>
-                    </button>
+                    <Bookmark checked={props.data.isFavorite}/>
                 </div>
                 <div className="deal__discount">
-                    <img className="deal__badge" src={`symbols/${props.data.isHot ? 'coin-red' : 'coin'}.svg`} width="24" height="24" alt="" />
+                    <img className="deal__badge" src={`symbols/${props.data.isHot ? 'coin-red' : 'coin'}.svg`} width="24" height="24" alt=""/>
                     {props.data.title}
                 </div>
             </div>
@@ -28,13 +32,16 @@ function Deal(props) {
                 </div>
                 <div className="deal__stats">
                     <div className="deal__distance">
-                        <div className="highlight">
-                            <img className="highlight__icon" src={'symbols/car-tiny.svg'} width="20" height="20" alt=""/>
-                            <div className="highlight__value">10 минут</div>
-                        </div>
+                        <Highlight distance="10 минут"/>
                     </div>
                     <div className="deal__features">
-
+                        {
+                            props.data.highlights.map((element, index)=> {
+                                return(
+                                    <Highlight icon={element.icon} text={element.text} key={'id' + props.data.id + '-highlight' + index}/>
+                                )
+                            })
+                        }
                     </div>
                 </div>
             </div>
