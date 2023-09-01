@@ -2,7 +2,7 @@ export const deals = [
   {
     'id': 1,
     'title': 'скидка -25% на все десерты',
-    'photo': './public/temp/cafe-de-paris-promo.jpg',
+    'photo': 'temp/cafe-de-paris-promo.jpg',
     'isHot': false,
     'venue': 'Cafe de Paris',
     'venueDescription': 'Высокая кухня от итальянского шеф-повара',
@@ -11,7 +11,7 @@ export const deals = [
   {
     'id': 2,
     'title': 'Бранч (11:00-14:00) за пол цены',
-    'photo': './public/temp/fabriq-promo.jpg',
+    'photo': 'temp/fabriq-promo.jpg',
     'isHot': true,
     'venue': 'Fabriq',
     'venueDescription': 'Гастрономический ресторан',
@@ -20,7 +20,7 @@ export const deals = [
   {
     'id': 3,
     'title': 'Бокал вина в подарок при заказе стейка',
-    'photo': './public/temp/ember-promo.webp',
+    'photo': 'temp/ember-promo.webp',
     'isHot': true,
     'venue': 'Ember',
     'venueDescription': 'Гавайская кухня',
