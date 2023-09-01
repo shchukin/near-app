@@ -7,13 +7,10 @@ function Promo() {
     return(
         <div style={{maxWidth: "390px", margin: "0 auto"}}>
 
-            <h1>Deal</h1>
-
-
             {
-                deals.map((deal, index) => {
+                deals.map((deal) => {
                     return (
-                        <Deal data={deal}/>
+                        <Deal data={deal} key={deal.id}/>
                     )
                 })
             }
