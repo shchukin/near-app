@@ -13,11 +13,11 @@ function Deal(props) {
                 </a>
                 <div className="deal__favorites">
                     <button className="bookmark" type="button">
-                        <img className="bookmark__icon" src={`./public/symbols/${props.data.isFavorite ? 'heart-fill' : 'heart'}.svg`} width="24" height="24" alt=""/>
+                        <img className="bookmark__icon" src={`symbols/${props.data.isFavorite ? 'heart-fill' : 'heart'}.svg`} width="24" height="24" alt=""/>
                     </button>
                 </div>
                 <div className="deal__discount">
-                    <img className="deal__badge" src={`./public/symbols/${props.data.isHot ? 'coin-red' : 'coin'}.svg`} width="24" height="24" alt="" />
+                    <img className="deal__badge" src={`symbols/${props.data.isHot ? 'coin-red' : 'coin'}.svg`} width="24" height="24" alt="" />
                     {props.data.title}
                 </div>
             </div>
@@ -29,7 +29,7 @@ function Deal(props) {
                 <div className="deal__stats">
                     <div className="deal__distance">
                         <div className="highlight">
-                            <img className="highlight__icon" src="../symbols/car-tiny.svg" width="20" height="20" alt=""/>
+                            <img className="highlight__icon" src={'symbols/car-tiny.svg'} width="20" height="20" alt=""/>
                             <div className="highlight__value">10 минут</div>
                         </div>
                     </div>
