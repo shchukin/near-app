@@ -1,0 +1,7 @@
+.promo {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 15px;
+    padding-bottom: 40px;
+}
