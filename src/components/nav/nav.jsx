@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 function Nav() {
     return (
@@ -6,26 +6,26 @@ function Nav() {
             <div className="nav__floating-panel">
                 <div className="nav__wrap container">
                     <div className="nav__inner-wrap">
-                        <Link className="nav__link nav__link--promo" to="/promo">
+                        <NavLink to="/promo" className={({isActive}) => isActive ? 'nav__link nav__link--current' : 'nav__link'}>
                             <img className="nav__icon" src="../symbols/nav-promo.svg" width="24" height="24" alt="" />
                             Акции
-                        </Link>
-                        <Link className="nav__link nav__link--now nav__link--current" to="/now">
+                        </NavLink>
+                        <NavLink to="/now" className={({isActive}) => isActive ? 'nav__link nav__link--current' : 'nav__link'}>
                             <img className="nav__icon" src="../symbols/nav-now.svg" width="24" height="24" alt=""/>
                             Сейчас
-                        </Link>
-                        <Link className="nav__link nav__link--search" to="/results">
+                        </NavLink>
+                        <NavLink to="/results" className={({isActive}) => isActive ? 'nav__link nav__link--current' : 'nav__link'}>
                             <img className="nav__icon" src="../symbols/nav-search.svg" width="24" height="24" alt=""/>
                             Поиск
-                        </Link>
-                        <Link className="nav__link nav__link--messages" to="/dialogs">
+                        </NavLink>
+                        <NavLink to="/dialogs" className={({isActive}) => isActive ? 'nav__link nav__link--current' : 'nav__link'}>
                             <img className="nav__icon" src="../symbols/nav-messages.svg" width="24" height="24" alt=""/>
                             Сообщения
-                        </Link>
-                        <Link className="nav__link nav__link--favorites" to="/favorites">
+                        </NavLink>
+                        <NavLink to="/favorites" className={({isActive}) => isActive ? 'nav__link nav__link--current' : 'nav__link'}>
                             <img className="nav__icon" src="../symbols/nav-favorites.svg" width="24" height="24" alt=""/>
                             Посещу
-                        </Link>
+                        </NavLink>
                     </div>
                 </div>
             </div>
