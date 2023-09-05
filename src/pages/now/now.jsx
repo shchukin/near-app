@@ -7,4 +7,4 @@ function Now() {
     )
 }
 
-export default Now
+export default Now;

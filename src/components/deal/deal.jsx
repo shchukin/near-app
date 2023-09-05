@@ -48,4 +48,4 @@ function Deal(props) {
     )
 }
 
-export default Deal
+export default Deal;

@@ -6,4 +6,4 @@ function Dummy() {
     )
 }
 
-export default Dummy
+export default Dummy;

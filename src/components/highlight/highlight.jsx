@@ -20,4 +20,4 @@ function Highlight(props) {
     }
 }
 
-export default Highlight
+export default Highlight;

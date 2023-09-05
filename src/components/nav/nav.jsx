@@ -10,7 +10,7 @@ function Nav() {
                             <img className="nav__icon" src="../symbols/nav-promo.svg" width="24" height="24" alt="" />
                             Акции
                         </NavLink>
-                        <NavLink to="/now" className={({isActive}) => isActive ? 'nav__link nav__link--current' : 'nav__link'}>
+                        <NavLink to="/" className={({isActive}) => isActive ? 'nav__link nav__link--current' : 'nav__link'}>
                             <img className="nav__icon" src="../symbols/nav-now.svg" width="24" height="24" alt=""/>
                             Сейчас
                         </NavLink>
@@ -33,4 +33,4 @@ function Nav() {
     )
 }
 
-export default Nav
+export default Nav;

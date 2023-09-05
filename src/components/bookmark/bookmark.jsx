@@ -7,4 +7,4 @@ function Bookmark(props) {
     )
 }
 
-export default Bookmark
+export default Bookmark;
