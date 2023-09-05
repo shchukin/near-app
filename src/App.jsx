@@ -8,10 +8,10 @@ function App() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/near-app/dist" element={<Main/>}/>
-                <Route path="/near-app/dist/promo" element={<Promo/>}/>
+                <Route path="" element={<Main/>}/>
+                <Route path="/promo" element={<Promo/>}/>
 
-                <Route path="/near-app/dist/button-doc" element={<ButtonDoc/>}/>
+                <Route path="/button-doc" element={<ButtonDoc/>}/>
 
                 <Route path="*" element={<NotFound/>}/>
             </Routes>
