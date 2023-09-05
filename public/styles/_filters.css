@@ -1,0 +1,167 @@
+.filters {
+    position: relative;
+}
+    .filters__detachable-top {
+        position: fixed;
+        z-index: 80;
+        left: 0;
+        width: 100%;
+        background-color: #FFFFFF;
+        top: var(--header-height);
+    }
+        .filters__head {
+            position: relative;
+            padding: 11px 0;
+        }
+            .filters__reset {
+                position: absolute;
+                left: 0;
+                top: 0;
+                border: none;
+                padding: 11px var(--container-padding);
+                background-color: transparent;
+                font-family: inherit;
+                font-size: 16px;
+                line-height: 24px;
+                color: #000000;
+                cursor: pointer;
+            }
+
+            .filters__heading {
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+            }
+
+            .filters__close {
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 46px;
+                padding: 0 var(--container-padding);
+                display: flex;
+                align-items: center;
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+            }
+
+
+    .filters__body {
+        padding-top: 60px;
+        padding-bottom: 102px;
+    }
+        .filters__primary {
+            padding-bottom: 52px;
+        }
+            .filters__item {
+                margin-top: 35px;
+                padding-right: var(--container-padding);
+                display: flex;
+                align-items: center;
+            }
+
+            .filters__item:first-child {
+                margin-top: 0;
+            }
+                .filters__param {
+                    flex-shrink: 0;
+                    width: 128px;
+                    padding-top: 2px;
+                    text-align: center;
+                }
+                    .filters__icon {
+                        vertical-align: top;
+                    }
+
+                    .filters__param-title {
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+
+                .filters__widget {
+                    flex-grow: 1;
+                }
+
+
+        .filters__preferences {
+            border-top: 1px solid #E3E3E3;
+        }
+            .filters__sub-heading {
+                margin-top: 16px;
+                margin-bottom: 0;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+                text-align: center;
+            }
+
+            .filters__detailed {
+                display: flex;
+                align-items: stretch;
+            }
+
+            .filters__handler {
+                position: relative;
+                display: inline-block;
+                vertical-align: top;
+                padding: 18px 10px;
+                border: none;
+                background-color: transparent;
+                flex-grow: 1;
+                flex-basis: 0;
+                cursor: pointer;
+            }
+                .filters__emblem {
+                    vertical-align: top;
+                }
+
+                .filters__label {
+                    display: block;
+                    margin-top: 8px;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #000000;
+                }
+
+            .filters__handler--selected::after {
+                content: "";
+                position: absolute;
+                right: 50%;
+                margin-right: -30px;
+                top: 15px;
+                width: 10px;
+                height: 10px;
+                background-color: #317EC5;
+                border-radius: 50%;
+            }
+
+
+        .filters__other {
+            border-top: 1px solid #E3E3E3;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0 20px;
+            flex-wrap: wrap;
+            padding-top: 30px;
+            padding-left: var(--container-padding);
+            padding-right: var(--container-padding);
+        }
+
+    .filters__detachable-bottom {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 18px;
+    }
+        .filters__footer {
+
+        }
+            .filters__submit {
+
+            }
+                .filters__submit.button,
+                .filters__submit .button {
+                    width: 100%;
+                }

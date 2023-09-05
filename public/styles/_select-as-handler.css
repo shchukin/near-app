@@ -1,0 +1,30 @@
+.select-as-handler {
+    position: relative;
+    border: none;
+    width: 100%;
+    padding: 10px 28px 10px 0;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 24px;
+    color: inherit;
+    text-align: left;
+    text-shadow: inherit;
+    cursor: pointer;
+}
+    .select-as-handler::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 6px;
+        display: block;
+        height: 1px;
+        background-color: currentColor;
+    }
+
+    .select-as-handler__angle {
+        position: absolute;
+        right: 8px;
+        top: 20px;
+    }

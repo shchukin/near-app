@@ -1,0 +1,17 @@
+.promo-bar {
+    padding-top: 13px;
+    padding-bottom: 16px;
+    background-color: #1017BE;
+    color: #FFFFFF;
+}
+    .promo-bar__heading {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .promo-bar__description {
+        margin-top: 6px;
+        padding-right: 53px;
+        font-size: 14px;
+        line-height: 20px;
+    }

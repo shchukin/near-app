@@ -1,0 +1,29 @@
+.null {
+    flex-grow: 1;
+    display: grid;
+    min-height: 100%;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+    .null__cell {
+        padding: 92px 38px 34px;
+        border: 1px solid #D8D8D8;
+        border-radius: 13px;
+    }
+        .null__message {
+            font-size: 24px;
+            line-height: 34px;
+            text-align: center;
+        }
+
+        .null__description {
+            margin-top: 38px;
+            font-size: 16px;
+            line-height: 23px;
+            text-align: center;
+        }
+
+        .null__action {
+            margin-top: 63px;
+        }

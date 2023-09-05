@@ -1,0 +1,31 @@
+.link {
+    display: inline;
+    vertical-align: baseline;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: #317EC5;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.link--inherit {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 1px;
+    text-decoration-thickness: 1px;
+}
+
+
+.link--danger {
+    color: #FF0000;
+}
+
+
+
+.link--classic {
+    text-decoration: underline;
+}

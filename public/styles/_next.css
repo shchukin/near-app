@@ -1,0 +1,18 @@
+.next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+}
+    .next__label {
+        flex-grow: 1;
+        padding-right: 40px;
+    }
+
+    .next__icon {
+        flex-shrink: 0;
+    }

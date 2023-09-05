@@ -1,4 +1,3 @@
-import './../../components/deal/deal.css'
 import Dummy from "../dummy/dummy.jsx";
 import Bookmark from "../bookmark/bookmark.jsx";
 import Highlight from "../highlight/highlight.jsx";

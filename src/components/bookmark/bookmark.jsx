@@ -1,5 +1,3 @@
-import './../../components/bookmark/bookmark.css'
-
 function Bookmark(props) {
 
     return(

@@ -1,0 +1,22 @@
+.date-picker {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    overflow: hidden;
+}
+    .date-picker__icon {
+        flex-shrink: 0;
+        margin-right: 22px;
+    }
+
+    .date-picker__widget {
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        scale: 3;
+    }
+
+    .date-picker__label {
+        padding-top: 2px;
+    }

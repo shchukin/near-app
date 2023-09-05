@@ -1,0 +1,232 @@
+.venue {
+
+}
+    .venue__stage {
+        position: relative;
+    }
+        .venue__gallery {
+            position: relative;
+            height: 46.2085svh;
+        }
+
+        .venue__back {
+            position: absolute;
+            left: calc(var(--container-padding) - 20px);
+            top: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            filter: invert(100%) drop-shadow(0px 4px 4px rgba(0 0 0 / 0.25));
+        }
+
+        .venue__top-operations {
+            position: absolute;
+            right: calc(var(--container-padding) - 12px);
+            top: 24px;
+            display: flex;
+            align-items: flex-start;
+        }
+            .venue__top-action {
+                position: relative;
+                display: inline-flex;
+                vertical-align: top;
+                align-items: center;
+                justify-content: center;
+                width: 36px;
+                height: 44px;
+                filter: invert(100%) drop-shadow(0px 4px 4px rgb(0 0 0 / 0.25));
+            }
+                .venue__bubble {
+                    position: absolute;
+                    z-index: 10;
+                    top: 100%;
+                    margin-top: 4px;
+                    right: 0;
+                    padding: 8px 16px;
+                    background-color: rgb(255 255 255 / 0.9);
+                    border-radius: 3px;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #000000;
+                    white-space: nowrap;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: opacity 0.3s ease,
+                                visibility 0.3s ease;
+                }
+
+                .venue__bubble--visible {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                    .venue__bubble::after {
+                        content: "";
+                        position: absolute;
+                        right: 11px;
+                        bottom: 100%;
+                        border-bottom: 6px solid rgb(255 255 255 / 0.9);
+                        border-left: 6px solid transparent;
+                        border-right: 6px solid transparent;
+                    }
+
+        .venue__emblem {
+            position: absolute;
+            left: var(--container-padding);
+            bottom: 28px;
+            border: 2px solid #FFFFFF;
+            border-radius: 3px;
+            padding: 2px;
+        }
+            .venue__logo {
+                vertical-align: top;
+            }
+
+    .venue__head {
+        padding-top: 17px;
+        padding-bottom: 14px;
+    }
+        .venue__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 34px;
+        }
+            .venue__star {
+                margin-top: 4px;
+                margin-left: 12px;
+                vertical-align: top;
+            }
+
+        .venue__stats {
+            margin-top: 8px;
+            display: flex;
+            align-items: center;
+            gap: 26px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+            .venue__prices {
+
+            }
+
+            .venue__distance {
+
+            }
+                .venue__distance .highlight__icon {
+                    opacity: 0.7;
+                }
+
+    .venue__original-promo {
+
+    }
+
+    .venue__promo {
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+
+    .venue__promo--pink {
+        background-color: #DBA380;
+    }
+
+    .venue__promo--blue {
+        background-color: #1017BE;
+    }
+        .venue__promo-wrap {
+            display: flex;
+            align-items: flex-start;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            padding-left: calc(var(--container-padding) - 3px);
+            padding-right: calc(var(--container-padding) - 3px);
+        }
+            .venue__item {
+                flex-shrink: 0;
+                width: 100%;
+                padding-left: 3px;
+                padding-right: 3px;
+            }
+
+
+    .venue__body {
+        position: relative;
+        padding-top: 16px;
+        padding-bottom: 120px;
+    }
+        .venue__body::before {
+            content: "";
+            position: absolute;
+            /*left: calc(-1 * var(--container-padding));*/
+            /*right: calc(-1 * var(--container-padding));*/
+            left: 0;
+            right: 0;
+            top: 0;
+            display: block;
+            height: 1px;
+            background-color: #E3E3E3;
+        }
+
+        .venue__original-promo ~ .venue__body::before,
+        .venue__promo ~ .venue__body::before {
+            display: none;
+        }
+
+        .venue__confirmation {
+            margin-bottom: 40px;
+        }
+
+        .venue__middle-operations {
+            float: right;
+            margin-right: -8px;
+            margin-top: -10px;
+            display: flex;
+            align-items: flex-start;
+        }
+            .venue__middle-action {
+                display: inline-flex;
+                vertical-align: top;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 44px;
+                background-size: 30px 30px;
+                background-repeat: no-repeat;
+                background-position: center center;
+                opacity: 0.4;
+            }
+
+        .venue__menu {
+            margin: -10px;
+            display: inline-flex;
+            vertical-align: top;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            opacity: 0.4;
+        }
+            .venue__book {
+                vertical-align: top;
+            }
+
+        .venue__description {
+            margin-top: 16px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+    .venue__bottom-operations {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 40px;
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+    }
+        .venue__bottom-action {
+            flex-grow: 1;
+        }

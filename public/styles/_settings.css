@@ -1,0 +1,47 @@
+.settings {
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+    .settings__head {
+        margin-left: calc(-1 * var(--container-padding));
+    }
+
+    .settings__body {
+        padding-top: 7vh;
+    }
+        .settings__list {
+
+        }
+
+        .settings__hint {
+            margin-top: 31px;
+            font-size: 16px;
+            line-height: 23px;
+            color: #979797
+        }
+
+        .settings__logout {
+            margin-top: 41px;
+        }
+            .settings__logout.button,
+            .settings__logout .button {
+                width: fit-content;
+            }
+
+
+
+    .settings__footer {
+        margin-top: auto;
+        padding-top: 80px;
+        padding-bottom: 33px;
+    }
+        .settings__bottom-action {
+            display: block;
+            width: fit-content;
+            padding: 12px 0;
+            color: #FF0000;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            text-decoration-thickness: 1px;
+        }

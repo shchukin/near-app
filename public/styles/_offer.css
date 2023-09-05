@@ -1,0 +1,84 @@
+.offer {
+    width: 100%;
+    vertical-align: top;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+    .offer__body {
+        position: relative;
+        min-height: 108px;
+        padding: 24px 20px 16px;
+        border: 1px solid #FFFFFF;
+        border-bottom: none;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+        .offer__icon {
+            position: absolute;
+            left: 8px;
+            top: 8px;
+            filter: invert(100%);
+        }
+
+        .offer__message {
+            font-size: 16px;
+            line-height: 22px;
+            color: #FFFFFF;
+        }
+
+    .offer__body--purple {
+        background-color: rgba(27, 67, 129, 0.9);
+    }
+
+    .offer__body--pink {
+        background-color: #FF007A;
+    }
+
+
+
+    .offer__footer {
+        position: relative;
+        min-height: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        font-size: 12px;
+        line-height: 17px;
+        text-align: center;
+    }
+        .offer__star {
+            position: absolute;
+            left: 11px;
+            top: 50%;
+            translate: 0 -50%;
+            vertical-align: top;
+        }
+
+    .offer__footer--red {
+        background-color: #FF0000;
+        color: #FFFFFF;
+    }
+        .offer__footer--red .offer__star {
+            filter: invert(100%);
+        }
+
+    .offer__footer--black {
+        background-color: #000000;
+        color: #FFFFFF;
+    }
+
+
+

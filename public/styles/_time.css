@@ -1,0 +1,11 @@
+.time {
+    margin-top: var(--chat-spacing);
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+    color: inherit;
+    text-align: center;
+}
+
+

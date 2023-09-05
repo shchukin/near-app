@@ -1,6 +1,3 @@
-import './../../components/highlight/highlight.css'
-
-
 function Highlight(props) {
 
     // TO DO: атрибуты width/height

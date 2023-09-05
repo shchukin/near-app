@@ -1,0 +1,45 @@
+.param {
+    display: flex;
+    align-items: center;
+}
+    .param__value {
+        appearance: none;
+        vertical-align: top;
+        width: 66px;
+        height: 54px;
+        padding: 15px 8px;
+        background-color: #FFFFFF;
+        border: none;
+        outline: none;
+        border-radius: 5px 0 0 5px;
+        font-family: inherit;
+        font-size: 14px;
+        line-height: 24px;
+        color: #000000;
+        text-align-last: center;
+        text-align: center;
+        transition: background-color var(--transition-hover),
+        border-color var(--transition-hover);
+    }
+
+    .param__unit {
+        appearance: none;
+        vertical-align: top;
+        width: 77px;
+        height: 54px;
+        padding: 15px 8px;
+        background-color: #3E3E3E;
+        box-shadow: inset 0 0 0 1px #FFFFFF;
+        border: none;
+        outline: none;
+        border-radius: 0 5px 5px 0;
+        font-family: inherit;
+        font-size: 14px;
+        line-height: 24px;
+        color: #FFFFFF;
+        text-align-last: center;
+        text-align: center;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        transition: background-color var(--transition-hover),
+        border-color var(--transition-hover);
+    }

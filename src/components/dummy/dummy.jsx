@@ -1,5 +1,3 @@
-import './../../components/dummy/dummy.css'
-
 function Dummy() {
     return(
         <div className="dummy">

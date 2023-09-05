@@ -1,0 +1,29 @@
+.footer-panel {
+    position: relative;
+    height: var(--footer-panel-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+}
+    .footer-panel__wrap {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    /* Странный баг, который добавляет белую полоску под чёрной кнопкой: http://joxi.ru/5mdMl77he4E5z2 */
+    /* Добавляем чёрный пиксель поверх и под кнопкой: */
+    .footer-panel::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        height: 1px;
+        background-color: #000000;
+    }

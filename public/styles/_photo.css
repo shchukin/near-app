@@ -1,0 +1,94 @@
+.photo {
+    height: 100%;
+    background-color: #000000;
+}
+    .photo__wrap {
+        position: relative;
+        height: 100%;
+    }
+        .photo__viewport {
+            height: 100%;
+        }
+            .photo__preview {
+                vertical-align: top;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+        .photo__close {
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 32px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            filter: invert(100%);
+        }
+
+        .photo__operations {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 117px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 64px;
+        }
+            .photo__action {
+                width: 46px;
+                height: 36px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 18px;
+                background-color: #000000;
+                border: 1px solid #FFFFFF;
+                cursor: pointer;
+            }
+                .photo__action img {
+                    width: 28px;
+                    height: 28px;
+                    filter: invert(100%);
+                }
+
+            .photo__shoot {
+                position: relative;
+                width: 70px;
+                height: 70px;
+                padding: 0;
+                border: none;
+                background-color: #FFFFFF;
+                border-radius: 50%;
+                text-indent: 200%;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+                .photo__shoot::after {
+                    content: "";
+                    position: absolute;
+                    left: 5px;
+                    top: 5px;
+                    right: 5px;
+                    bottom: 5px;
+                    display: block;
+                    border: 1px solid #000000;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+
+        .photo__upload {
+            position: absolute;
+            left: 23px;
+            bottom: 20px;
+            background-color: rgba(0, 0, 0, 0.3);
+            border: 1px solid #FFFFFF;
+            border-radius: 25px;
+        }
+
+        .photo__upload.add,
+        .photo__upload .add {
+            position: absolute;
+        }

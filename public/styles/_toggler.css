@@ -1,0 +1,41 @@
+.toggler {
+    position: relative;
+    display: block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    cursor: pointer;
+}
+    .toggler__widget {
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+    }
+
+    .toggler__label {
+
+    }
+
+    .toggler__switch {
+        position: absolute;
+        top: 12px;
+        right: var(--container-padding);
+        width: 36px;
+        height: 17px;
+        border: 1px solid #000000;
+        border-radius: 8px;
+    }
+        .toggler__knob {
+            margin: 1px;
+            width: 19px;
+            height: 13px;
+            background-color: #BBBBBB;
+            border-radius: 15px;
+            transition: translate 0.2s ease,
+                        background-color 0.2s ease;
+        }
+
+    .toggler__widget:checked ~ .toggler__switch .toggler__knob {
+        translate: 13px;
+        background-color: #006CCF;
+    }

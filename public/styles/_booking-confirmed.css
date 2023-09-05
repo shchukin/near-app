@@ -1,0 +1,11 @@
+.booking-confirmed {
+    margin-top: 36px;
+    margin-bottom: 36px;
+    padding: 6px 18px;
+    background-color: #000000;
+    border-radius: 13px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-align: center;
+}
