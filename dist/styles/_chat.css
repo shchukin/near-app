@@ -1,0 +1,155 @@
+.chat {
+
+}
+    .chat__head {
+        position: fixed;
+        z-index: 500;
+        left: 0;
+        top: 0;
+        right: 0;
+        background-color: #FFFFFF;
+    }
+        .chat__summary {
+
+        }
+
+        .chat__summary:last-child {
+            box-shadow: inset 0 -1px 0 #E3E3E3;
+        }
+
+            .chat__summary-wrap {
+                display: flex;
+                align-items: center;
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+                .chat__back {
+                    flex-shrink: 0;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding-left: var(--container-padding);
+                    padding-right: var(--container-padding);
+                }
+
+                .chat__heading {
+                    flex-grow: 1;
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+
+                .chat__favorites {
+                    flex-shrink: 0;
+                    width: 44px;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: transparent;
+                    padding: 0;
+                    border: none;
+                    cursor: pointer;
+                }
+
+                .chat__venue {
+                    flex-shrink: 0;
+                    height: 60px;
+                    padding-left: 4px;
+                    padding-right: var(--container-padding);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+        .chat__banner {
+            display: block;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            background-color: #000000;
+            color: #979797;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .chat__nav {
+            border-top: 1px solid #E3E3E3;
+            box-shadow: inset 0 -1px 0 #E3E3E3;
+        }
+
+        .chat__banner ~ .chat__nav {
+            border-top: none;
+        }
+            .chat__nav-wrap {
+                display: flex;
+                align-self: start;
+            }
+                .chat__filter {
+                    flex-grow: 1;
+                    flex-basis: 0;
+                    background-color: transparent;
+                    border: none;
+                    padding: 10px 18px;
+                    border-bottom: 1px solid #E3E3E3;
+                    font-family: inherit;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #000000;
+                    text-align: center;
+                    cursor: pointer;
+                }
+
+                .chat__filter--current {
+                    border-bottom-color: #000000;
+                }
+
+    .chat__body {
+        padding: 8px var(--chat-gap) 26px;
+    }
+
+    .chat__footer {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #F3F3F3;
+    }
+        .chat__footer-wrap {
+            position: relative;
+        }
+            .chat__field {
+                vertical-align: top;
+                width: 100%;
+                max-height: 100px; /* 3 rows */
+                padding: 14px 50px 14px var(--container-padding);
+                background-color: transparent;
+                background-clip: padding-box; /* hack for iOS to make box-shadow works (and who knows what else) */
+                border: none;
+                outline: none;
+                border-radius: 0;
+                font-family: inherit;
+                font-size: 16px; /* not less than 16px (otherwise mobile browsers will zoom in on focus) */
+                line-height: 24px;
+                color: #000000;
+                -webkit-tap-highlight-color: transparent;
+                resize: none;
+            }
+
+            .chat__field::placeholder {
+                color: #979797;
+            }
+
+            .chat__send {
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 52px;
+                height: 100%;
+                border: none;
+                padding: 11px;
+                background-color: transparent;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                cursor: pointer;
+            }

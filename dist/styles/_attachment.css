@@ -1,0 +1,37 @@
+.attachment {
+    margin-top: var(--chat-spacing);
+    width: fit-content;
+}
+    .attachment__preview {
+        display: block;
+        width: fit-content;
+    }
+        .attachment__image {
+            vertical-align: top;
+            background-color: #000000;
+            border-radius: 3px;
+        }
+
+    .attachment__more {
+        display: inline-flex;
+        align-self: center;
+        padding-top: 2px;
+        padding-bottom: 4px;
+        gap: 6px;
+        width: fit-content;
+        font-size: 12px;
+        line-height: 16px;
+        color: #000000;
+        text-decoration: none;
+    }
+        .attachment__arrow {
+
+        }
+
+
+.attachment--self {
+    margin-left: auto;
+}
+    .attachment--self .attachment__preview {
+        margin-left: auto;
+    }

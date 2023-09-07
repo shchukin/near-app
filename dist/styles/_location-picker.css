@@ -1,0 +1,48 @@
+.location-picker {
+    position: relative;
+    padding-left: 42px;
+}
+    .location-picker__icon {
+        position: absolute;
+        left: 0;
+        top: 4px;
+    }
+
+    .location-picker__search {
+
+    }
+
+    .location-picker__output {
+        position: relative;
+        padding: 5px 42px 5px 0;
+    }
+        .location-picker__title {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .location-picker__address {
+            margin-top: -4px;
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        .location-picker__delete {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            margin-top: -21px;
+            border: none;
+            padding: 13px;
+            display: flex;
+            background-color: transparent;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+
+
+.location-picker--value-selected {
+
+}

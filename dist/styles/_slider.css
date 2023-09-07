@@ -1,0 +1,61 @@
+.slider {
+
+}
+
+.slider--default-skin.noUi-target,
+.slider--default-skin .noUi-target {
+    height: 13px;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, transparent, transparent 6px, #000000 6px, #000000 7px, transparent 7px, transparent );
+}
+    .slider--default-skin .noUi-base {
+
+    }
+        .slider--default-skin .noUi-connects {
+
+        }
+
+        .slider--default-skin .noUi-origin {
+
+        }
+            .slider--default-skin .noUi-handle {
+                top: -10px;
+                height: 33px;
+                background: none;
+                border: none;
+                box-shadow: none;
+            }
+
+                .slider--default-skin .noUi-handle::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto;
+                    width: 13px;
+                    height: 13px;
+                    border-radius: 50%;
+                    background-color: #000000;
+                }
+
+                .slider--default-skin .noUi-handle::after {
+                    display: none;
+                }
+
+                .slider--default-skin .noUi-touch-area {
+
+                }
+
+                .slider--default-skin .noUi-tooltip {
+                    margin-bottom: -2px;
+                    padding: 0 7px;
+                    border: none;
+                    background: none;
+                    bottom: 100%;
+                    font-size: 14px;
+                    line-height: 20px;
+                }

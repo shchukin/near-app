@@ -1,0 +1,13 @@
+.highlight {
+    display: inline-flex;
+    vertical-align: top;
+    gap: 8px;
+    align-items: center;
+}
+    .highlight__icon {
+
+    }
+
+    .highlight__value {
+
+    }

@@ -1,0 +1,59 @@
+.distance-slider {
+
+}
+    .distance-slider__handler {
+
+    }
+        .distance-slider__handler.button,
+        .distance-slider__handler .button {
+            width: fit-content;
+        }
+
+
+    .distance-slider__body {
+        display: none;
+        align-items: flex-end;
+        height: var(--input-widget-height);
+        gap: 16px;
+    }
+        .distance-slider__widget {
+            flex-grow: 1;
+            margin-bottom: 10px;
+        }
+
+        .distance-slider__type {
+            flex-shrink: 0;
+            width: 50px;
+            height: var(--input-widget-height);
+            border: none;
+            padding: 0;
+            background-color: transparent;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center bottom 14px;
+            cursor: pointer;
+            text-indent: 200%;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .distance-slider__type--car {
+            background-image: url("../images/tesla@2x.png");
+        }
+
+        .distance-slider__type--walking {
+            background-image: url("../vectors/transport-switch-walking.svg");
+            background-size: 28px 28px;
+        }
+
+
+.distance-slider--expanded {
+
+}
+    .distance-slider--expanded .distance-slider__handler {
+        display: none;
+    }
+
+    .distance-slider--expanded .distance-slider__body {
+        display: flex;
+    }

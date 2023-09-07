@@ -1,0 +1,118 @@
+:root {
+    --event-preview: 130px;
+}
+
+@media (max-width: 359px) {
+    :root {
+        --event-preview: 110px;
+    }
+}
+
+.event {
+    display: flex;
+    align-items: stretch;
+    gap: min(var(--container-padding), 25px);
+    padding-right: var(--container-padding);
+    min-height: var(--event-preview);
+}
+
+.event + .event {
+    border-top: 1px solid #E3E3E3;
+}
+
+    .event__preview {
+        flex-shrink: 0;
+        display: block;
+        width: var(--event-preview);
+    }
+        .event__poster {
+            width: 100%;
+            height: 100%;
+            vertical-align: top;
+            object-fit: cover;
+            background-color: var(--image-fallback);
+        }
+
+
+
+    .event__body {
+        padding-top: 8px;
+        position: relative;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+        .event__favorites {
+            position: absolute;
+            right: calc(-1 * var(--container-padding));
+            top: 0;
+        }
+            .event__favorites .bookmark {
+                padding-left: calc(var(--container-padding) - 5px);
+                padding-right: calc(var(--container-padding) - 5px);
+            }
+
+        .event__delete-from-favorites {
+            position: absolute;
+            right: calc(-1 * var(--container-padding));
+            top: 0;
+            border: none;
+            background-color: transparent;
+            padding: 10px var(--container-padding) 20px;
+            cursor: pointer;
+        }
+            .event__cross {
+                opacity: 0.4;
+                vertical-align: top;
+            }
+
+        .event__data {
+
+        }
+
+        .event__time {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .event__heading {
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 7px;
+            font-size: 16px;
+            line-height: 20px;
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .event__description {
+            margin-top: -1px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+        .event__address {
+            margin-top: -3px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+            .event__address .dot {
+                margin-top: 6px;
+                margin-right: 4px;
+            }
+
+        .event__operations {
+            margin-top: auto;
+            margin-left: -10px;
+            padding-top: 5px;
+            display: flex;
+            align-items: flex-start;
+            gap: 4px;
+        }
+            .event__action {
+                width: 44px;
+                height: 34px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }

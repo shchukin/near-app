@@ -1,0 +1,37 @@
+.now {
+    position: relative;
+    height: 100%;
+}
+    .now__stage {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000000;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: y mandatory;
+    }
+        .now__item {
+            height: 100%;
+            scroll-snap-align: start;
+            scroll-snap-stop: always;
+        }
+
+
+    .now__mood {
+        position: absolute;
+        top: 15px;
+        left: var(--container-padding);
+        right: var(--container-padding);
+        color: #FFFFFF;
+        text-shadow: 0 4px 4px rgba(0 0 0 / 0.25);
+    }
+        .now__mood .select-as-handler__angle {
+            filter: invert(100%) drop-shadow(0 4px 4px rgb(0 0 0 / 0.25));
+        }
+
+        .now__mood .select-as-handler::before {
+            filter: drop-shadow(0 4px 4px rgb(0 0 0 / 0.25));
+        }

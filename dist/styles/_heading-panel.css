@@ -1,0 +1,22 @@
+.heading-panel {
+    height: var(--heading-panel-height);
+    display: flex;
+    align-items: center;
+}
+    .heading-panel__back {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: top;
+        border: none;
+        height: 100%;
+        padding: 0 var(--container-padding);
+        margin-right: -4px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .heading-panel__title {
+        font-size: 24px;
+        line-height: 32px;
+    }

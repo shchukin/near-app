@@ -1,0 +1,22 @@
+.form {
+
+}
+    .form__field {
+        margin-top: 16px;
+    }
+
+    .form__field:first-child {
+        margin-top: 0;
+    }
+
+    .form__submit {
+        margin-top: 20px;
+    }
+        .form__submit.button,
+        .form__submit .button {
+            width: fit-content;
+        }
+
+    .form__alternative {
+        margin-top: 40px;
+    }

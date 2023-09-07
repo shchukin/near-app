@@ -1,0 +1,13 @@
+.logo-as-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    overflow: hidden;
+}
+    .logo-as-avatar__image {
+        vertical-align: top;
+    }

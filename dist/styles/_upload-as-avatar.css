@@ -1,0 +1,18 @@
+.upload-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 156px;
+    height: 156px;
+    border: none;
+    background-color: #D6D6D6;
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+}
+    .upload-avatar__icon {
+        position: relative;
+        top: -4px;
+        vertical-align: top;
+        filter: invert(100%);
+    }

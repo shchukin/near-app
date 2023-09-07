@@ -1,0 +1,135 @@
+.stories {
+    position: relative;
+    height: 100%;
+}
+    .stories__stage {
+        height: 100%;
+    }
+        .stories__gallery {
+            position: relative;
+            height: 100%;
+        }
+            .stories__image {
+                vertical-align: top;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                background-color: #000000;
+            }
+
+        .stories__control {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 50%;
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            text-indent: 200%;
+            white-space: nowrap;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .stories__control--prev {
+            left: 0;
+        }
+
+        .stories__control--next {
+            right: 0;
+        }
+
+    .stories__head {
+        position: absolute;
+        top: 30px;
+        left: 92px;
+        right: 50px;
+    }
+        .stories__heading {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-size: 24px;
+            line-height: 34px;
+            color: #FFFFFF;
+            text-decoration: none;
+            text-shadow: 0 4px 4px rgba(0 0 0 / 0.25);
+        }
+
+        .stories__share {
+            display: inline-block;
+            vertical-align: top;
+            border: none;
+            width: 44px;
+            height: 44px;
+            padding: 10px;
+            margin-top: -1px;
+            margin-bottom: -9px;
+            background-color: transparent;
+            cursor: pointer;
+            filter: invert(100%) drop-shadow(0 4px 4px rgb(0 0 0 / 0.25));
+        }
+
+    .stories__preview {
+        position: absolute;
+        left: 19px;
+        top: 21px;
+        display: inline-block;
+        vertical-align: top;
+    }
+        .stories__logo {
+            vertical-align: top;
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+        }
+
+    .stories__close {
+        position: absolute;
+        right: 0;
+        top: 20px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        filter: invert(100%) drop-shadow(0 4px 4px rgb(0 0 0 / 0.25));
+    }
+
+    .stories__operations {
+        position: absolute;
+        left: 34px;
+        right: 34px;
+        bottom: 28px;
+        background-color: rgb(0 0 0 / 0.7);
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+        .stories__mentioned {
+            font-size: 16px;
+            line-height: 24px;
+            color: #FFFFFF;
+        }
+
+        .stories__action {
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            background-color: transparent;
+            border: none;
+            padding: 9px;
+            cursor: pointer;
+            text-indent: 200%;
+            white-space: nowrap;
+            overflow: hidden;
+            filter: invert(100%);
+        }
+

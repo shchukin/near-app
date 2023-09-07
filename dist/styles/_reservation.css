@@ -1,0 +1,111 @@
+.reservation {
+    width: 100%;
+    vertical-align: top;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    cursor: pointer;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+    .reservation__body {
+        position: relative;
+        min-height: 108px;
+        padding: 40px 20px 4px;
+        border: 1px solid var(--grey-dark);
+        border-bottom: none;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+        .reservation__icon {
+            position: absolute;
+            left: 8px;
+            top: 8px;
+        }
+
+        .reservation__heading {
+            position: absolute;
+            top: 4px;
+            left: 0;
+            right: 0;
+            font-size: 16px;
+            line-height: 24px;
+            color: #000000;
+            text-align: center;
+        }
+
+        .reservation__price-range {
+            position: absolute;
+            right: 11px;
+            top: 4px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .reservation__message {
+            font-size: 16px;
+            line-height: 22px;
+            color: #000000;
+        }
+            .reservation__calendar {
+                float: left;
+                margin-right: 11px;
+            }
+
+            .reservation__children {
+                margin-top: 3px;
+            }
+
+    .reservation__body--purple {
+        background-color: rgba(27, 67, 129, 0.9);
+    }
+
+    .reservation__body--pink {
+        background-color: #FF007A;
+    }
+
+
+
+    .reservation__footer {
+        position: relative;
+        min-height: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #000000;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        font-size: 12px;
+        line-height: 17px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+        .reservation__star {
+            position: absolute;
+            left: 11px;
+            top: 50%;
+            translate: 0 -50%;
+            vertical-align: top;
+        }
+
+    .reservation__footer--red {
+        background-color: #FF0000;
+        color: #FFFFFF;
+    }
+        .reservation__footer--red .reservation__star {
+            filter: invert(100%);
+        }
+
+    .reservation__footer--black {
+        background-color: #000000;
+        color: #FFFFFF;
+    }
+
+
+

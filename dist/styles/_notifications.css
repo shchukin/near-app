@@ -1,0 +1,21 @@
+.notifications {
+    height: 100%;
+    padding-top: var(--heading-panel-height);
+}
+    .notifications__head {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        background-color: #FFFFFF;
+        /*margin-left: calc(-1 * var(--container-padding));*/
+    }
+
+    .notifications__body {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding-top: 10px;
+        padding-bottom: 40px;
+    }

@@ -1,0 +1,97 @@
+.promo-toggler {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+}
+    .promo-toggler__widget {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        opacity: 0;
+    }
+
+    .promo-toggler__panel {
+        background-color: #1017BE;
+        color: #FFFFFF;
+        transition: background-color 0.2s ease;
+    }
+
+    .promo-toggler__widget:checked ~ .promo-toggler__panel {
+        background-color: #DBA381;
+    }
+        .promo-toggler__switch {
+            float: right;
+            margin-right: var(--container-padding);
+            margin-left: 10px;
+            margin-top: 13px;
+            margin-bottom: 10px;
+            width: 36px;
+            height: 17px;
+            padding: 2px;
+            background-color: #FFFFFF;
+            border-radius: 9px;
+        }
+            .promo-toggler__knob {
+                width: 19px;
+                height: 13px;
+                border-radius: 7px;
+                background-color: #317EC5;
+                transition: translate 0.2s ease;
+            }
+
+            .promo-toggler__widget:checked ~ .promo-toggler__panel .promo-toggler__knob {
+                translate: 13px;
+                background-color: #EE6DAB;
+            }
+
+        .promo-toggler__unchecked {
+            display: block;
+        }
+
+        .promo-toggler__widget:checked ~ .promo-toggler__panel .promo-toggler__unchecked {
+            display: none;
+        }
+
+
+        .promo-toggler__checked {
+            display: none;
+        }
+
+        .promo-toggler__widget:checked ~ .promo-toggler__panel .promo-toggler__checked {
+            display: block;
+        }
+            .promo-toggler__wrap {
+                padding-top: 13px;
+                padding-bottom: 16px;
+            }
+                .promo-toggler__heading {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+
+                .promo-toggler__description {
+                    margin-top: 13px;
+                    padding-right: 53px;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+                    .promo-toggler__booking {
+                        margin-top: 24px;
+                        margin-bottom: 8px;
+                        margin-right: -46px;
+                    }
+
+                .promo-toggler__booking-commission {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 8px;
+                    background-color: #F6D48D;
+                    padding: 3px var(--container-padding) 5px;
+                    /*margin: 15px calc(-1 * var(--container-padding)) -16px;*/
+                    color: #000000;
+                }
+                    .promo-toggler__comission-info {
+                        vertical-align: top;
+                    }

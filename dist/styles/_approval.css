@@ -1,0 +1,51 @@
+.approval {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: var(--heading-panel-height);
+    padding-bottom: var(--footer-panel-height);
+}
+    .approval__header {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        background-color: #FFFFFF;
+    }
+
+    .approval__body {
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+        .approval__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 34px;
+            text-align: center;
+        }
+
+        .approval__content {
+            margin-top: 50px;
+        }
+
+        .approval__agreement {
+            margin-top: 6vh;
+            text-align: center;
+        }
+
+    .approval__footer {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+        .approval__link {
+            background-color: #000000;
+            font-size: 18px;
+            line-height: 26px;
+            color: #FFFFFF;
+            text-decoration: none;
+        }

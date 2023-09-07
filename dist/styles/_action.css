@@ -1,0 +1,19 @@
+.action {
+    width: 44px;
+    height: 34px;
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.action--call {
+    background-image: url("../images/action-call@3x.png");
+}
+
+.action--share {
+    background-image: url("../images/action-share@3x.png");
+}
+
+.action--location {
+    background-image: url("../images/action-location@3x.png");
+}

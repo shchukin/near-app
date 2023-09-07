@@ -1,0 +1,149 @@
+.story {
+    position: relative;
+    height: 100%;
+}
+    .story__stage {
+        position: relative;
+        height: 100%;
+    }
+        .story__list {
+            position: relative;
+            height: 100%;
+        }
+            .story__image {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                vertical-align: top;
+                object-fit: cover;
+                background-color: #000000;
+                visibility: hidden;
+            }
+
+            .story__image--current {
+                visibility: visible;
+            }
+
+        .story__control {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 50%;
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            text-indent: 200%;
+            white-space: nowrap;
+            overflow: hidden;
+            cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .story__control--prev {
+            left: 0;
+        }
+
+        .story__control--next {
+            right: 0;
+        }
+
+        .story__progress {
+            position: absolute;
+            left: 8px;
+            right: 8px;
+            top: 6px;
+            display: flex;
+            align-items: flex-end;
+            gap: 2px;
+        }
+            .story__bar {
+                flex-grow: 1;
+                height: 2px;
+                background-color: #FFFFFF;
+                border-radius: 1px;
+            }
+                .story__percentage {
+                    height: 100%;
+                    background-color: #000000;
+                    border-radius: 1px;
+                }
+
+    .story__head {
+        position: absolute;
+        top: 59px;
+        left: var(--container-padding);
+        right: var(--container-padding);
+        color: #FFFFFF;
+        text-shadow: 0 4px 4px rgba(0 0 0 / 0.25);
+    }
+
+    .story__head .highlight__icon,
+    .story__head .distance__pedestrian,
+    .story__head .distance__car {
+        filter: drop-shadow(0 4px 4px rgb(0 0 0 / 0.25));
+    }
+        .story__heading {
+            margin-top: 21px;
+            display: inline-block;
+            vertical-align: top;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            font-size: 36px;
+            line-height: 36px;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+        .story__stats {
+            margin-top: 12px;
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+            .story__stats .highlight__icon {
+                filter: invert(100%) drop-shadow(0 4px 4px rgb(0 0 0 / 0.25));
+            }
+
+    .story__operations {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        translate: 0 -35%; /* centering, but not exactly at the center */
+    }
+        .story__action {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            vertical-align: top;
+            padding: 25px 18px;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            filter: drop-shadow(0 4px 4px rgb(0 0 0 / 0.25));
+        }
+
+    .story__note {
+        position: absolute;
+        left: var(--container-padding);
+        right: var(--container-padding);
+        bottom: 21px;
+        font-size: 16px;
+        line-height: 23px;
+        color: #FFFFFF;
+        text-align: center;
+        text-shadow: 0 4px 4px rgba(0 0 0 / 0.25);
+        pointer-events: none;
+    }
+
+
+.story--progress-at-the-bottom {
+
+}
+    .story--progress-at-the-bottom .story__progress {
+        top: auto;
+        bottom: 6px;
+    }
